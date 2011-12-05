@@ -1,0 +1,7 @@
+diff -Naur kmid-2.0-svn/doc/CMakeLists.txt kmid-2.0-svn.new/doc/CMakeLists.txt
+--- kmid-2.0-svn/doc/CMakeLists.txt	2008-02-04 03:39:31.000000000 +0100
++++ kmid-2.0-svn.new/doc/CMakeLists.txt	2008-02-11 23:57:33.000000000 +0100
+@@ -1,2 +1,2 @@
+ ########### install files ###############
+-kde4_create_handbook(index.docbook INSTALL_DESTINATION ${HTML_INSTALL_DIR}/en)
++kde4_create_handbook(index.docbook INSTALL_DESTINATION ${HTML_INSTALL_DIR}/en SUBDIR kmid)

@@ -1,0 +1,13 @@
+diff -Naur kmid-767336/CMakeLists.txt kmid-767336.new/CMakeLists.txt
+--- kmid-767336/CMakeLists.txt	2007-12-08 12:52:37.000000000 +0100
++++ kmid-767336.new/CMakeLists.txt	2008-01-27 22:31:44.000000000 +0100
+@@ -1,5 +1,9 @@
+ project(kmid)
+ 
++find_package(KDE4 REQUIRED)
++include (KDE4Defaults)
++include_directories (${KDE4_INCLUDES})
++
+ macro_optional_find_package(Alsa)
+ alsa_configure_file(${CMAKE_CURRENT_BINARY_DIR}/config-alsa.h)
+ 
